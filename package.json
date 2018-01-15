@@ -1,0 +1,32 @@
+{
+  "name": "trackit-lambda",
+  "version": "1.0.0",
+  "description": "API for front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "rm -rf node_modules",
+    "deploy": "npm install --production && sh deploy.sh",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesterXL/trackit-lambda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesterXL/trackit-lambda/issues"
+  },
+  "homepage": "https://github.com/JesterXL/trackit-lambda#readme",
+  "dependencies": {
+    "aws-sdk": "^2.176.0",
+    "file-type": "^7.4.0",
+    "folktale": "^2.0.1",
+    "lambda-restify": "^2.0.5",
+    "lodash": "^4.17.4",
+    "restify": "^6.3.4",
+    "restify-cors-middleware": "^1.1.0"
+  }
+}
